@@ -10,6 +10,7 @@ body {
 a {
   text-decoration:none;
   font-family:sans-serif;
+  font-size:16px;
 }
 
 .title {
@@ -20,9 +21,26 @@ a {
 }
 .subtitle {
   font-family:sans-serif;
-  font-size:15px;
+  font-size:10px;
   margin:0;
   margin-top:15px;
+}
+
+hr {
+  border: 0;
+  height: 1px;
+  background-image: linear-gradient(to right, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0));
+}
+
+.hr-title {
+  font-family:sans-serif;
+  font-size:22px;
+  margin:12px;
+}
+
+body center #changeColor {
+  width:72px;
+  height:25px;
 }
 
 </style>
@@ -45,6 +63,9 @@ a {
       <hr />
 
       <p class="hr-title">Styles</p>
+      <button id="changeColor"></button>
     </center>
+
+  <script src="popup.js"></script>
   </body>
 </html>
