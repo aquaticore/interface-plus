@@ -1,54 +1,53 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
   <head>
-<style>
-body {
-  min-width:400px;
-  height:560px;
-}
+    <style>
+      body {
+        min-width:400px;
+        height:560px;
+      }
 
-a {
-  text-decoration:none;
-  font-family:sans-serif;
-  font-size:16px;
-}
+      a {
+        text-decoration:none;
+        font-family:sans-serif;
+        font-size:16px;
+      }
 
-.title {
-  font-family:sans-serif;
-  font-size:35px;
-  margin:0;
-  margin-top:20px;
-}
-.subtitle {
-  font-family:sans-serif;
-  font-size:10px;
-  margin:0;
-  margin-top:15px;
-}
+      .title {
+        font-family:sans-serif;
+        font-size:35px;
+        margin:0;
+        margin-top:20px;
+      }
+      .subtitle {
+        font-family:sans-serif;
+        font-size:10px;
+        margin:0;
+        margin-top:15px;
+      }
 
-hr {
-  border: 0;
-  height: 1px;
-  background-image: linear-gradient(to right, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0));
-}
+      hr {
+        border: 0;
+        height: 1px;
+        background-image: linear-gradient(to right, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0));
+      }
 
-.hr-title {
-  font-family:sans-serif;
-  font-size:22px;
-  margin:12px;
-}
+      .hr-title {
+        font-family:sans-serif;
+        font-size:22px;
+        margin:12px;
+      }
 
-body center #changeColor {
-  width:72px;
-  height:25px;
-}
-
-</style>
+      body center #changeColor {
+        width:72px;
+        height:25px;
+      }
+    </style>
   </head>
   <body>
     <center>
       <p class="title">Interface Plus</p>
-      <a href="https://ydstudios.github.io" target="_blank" class="subtitle">By YouthDev Studios</a>
+      <a href="https://ydstudios.github.io" target="_blank" class="subtitle">By YD Studios</a>
       <hr />
 
       <p class="hr-title">Help</p>
@@ -56,16 +55,17 @@ body center #changeColor {
       <hr />
 
       <p class="hr-title">Email</p>
-      <a href="https://mail.google.com/mail/u/0/#inbox" target="_blank">Your inbox</a> <br /> <br/>
-      <a href="https://mail.google.com/mail/u/0/#inbox?compose=new" target="_blank">Create new email</a> <br /> <br/>
+      <a href="https://mail.google.com/mail/u/0/#inbox" target="_blank">Open inbox</a> <br /> <br/>
+      <a href="https://mail.google.com/mail/u/0/#inbox?compose=new" target="_blank">Compose new email</a> <br /> <br/>
       <label>Email list:</label>
-      <input type="text" id="email-list" name="email-list">
+      <input type="text" id="contact-entry"></input>
+      <button id="save">Save</button>
       <hr />
 
       <p class="hr-title">Styles</p>
       <button id="changeColor"></button>
     </center>
-
-  <script src="popup.js"></script>
+    <script src="popup.js"></script>
+    <script src="emailList.js"></script>
   </body>
 </html>
