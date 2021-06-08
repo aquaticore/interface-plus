@@ -1,16 +1,20 @@
 {
-  "name": "Interface Plus",
+  "author": "YD Studios",
+  "name": "Interface+",
+  "short_name": "IF+",
   "description": "An intuitive and efficient Chrome, tailored to your needs.",
   "version": "1.0",
   "manifest_version": 3,
-  "background": {
-    "service_worker": "background.js"
-  },
-  "permissions": ["storage"],
-  "action": {
-  "default_popup": "popup.html"
-  },
   "icons": {
-    "128": "/icon.png"
+    "128": "icon.png"
+  },
+  "browser_action": {
+    "default_icon": "icon.png",
+    "default_popup": "popup.html",
+    "default_title": "Interface+"
+  },
+  "permissions": ["activeTab","storage"],
+  "background": {
+    "scripts": "background.js"
   }
 }
