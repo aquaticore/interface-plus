@@ -25,9 +25,11 @@ var manifest =       {
           }
         }
       }
-var jsonManifest = JSON.stringify(dict);
-var fs = require('fs');
-fs.mkdirSync(dir); //create new folder
-fs.writeFile("manifest.json", manifest, function(err, result) { //put the manifest in
-    if(err) console.log('error', err);
-});
+function newStyle() {
+  var jsonManifest = JSON.stringify(dict);
+  var fs = require('fs');
+  fs.mkdirSync(dir); //create new folder
+  fs.writeFile("manifest.json", manifest, function(err, result) { //put the manifest in
+      if(err) console.log('error', err);
+  });
+}
